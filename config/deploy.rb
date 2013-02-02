@@ -1,14 +1,20 @@
+<<<<<<< HEAD
 set :application, "groupe"
 set :repository,  "git@github.com:obara-n/groupe.git"
 set :deploy_to, "/home/passenger/myapp1"
+=======
+set :application, "myapp"
+set :repository,  "git@github.com:obara-n/groupe.git"
+set :deploy_to, "/home/passenger/myapp"
+>>>>>>> f372541c92b7e5f8738dc844b187cd67a7c1fdbb
 set :use_sudo, false
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "localhost"                          # Your HTTP server, Apache/etc
-role :app, "localhost"                          # This may be the same as your `Web` server
-role :db,  "localhost", :primary => true # This is where Rails migrations will run
+role :web, "202.247.58.219"                          # Your HTTP server, Apache/etc
+role :app, "202.247.58.219"                          # This may be the same as your `Web` server
+role :db,  "202.247.58.219", :primary => true # This is where Rails migrations will run
 #role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
@@ -18,10 +24,10 @@ role :db,  "localhost", :primary => true # This is where Rails migrations will r
 # these http://github.com/rails/irs_process_scripts
 
 # If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+ namespace :deploy do
+   task :start do ; end
+   task :stop do ; end
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
