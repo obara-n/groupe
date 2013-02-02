@@ -1,5 +1,5 @@
-set :application, "myapp1"
-set :repository,  "git@github.com:obara-n/myapp1.git"
+set :application, "groupe"
+set :repository,  "git@github.com:obara-n/groupe.git"
 set :deploy_to, "/home/passenger/myapp1"
 set :use_sudo, false
 
