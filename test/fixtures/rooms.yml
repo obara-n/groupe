@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  room_id: MyString
+  room_name: MyString
+  room_max: 1
+
+two:
+  room_id: MyString
+  room_name: MyString
+  room_max: 1

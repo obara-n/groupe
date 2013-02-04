@@ -11,11 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130202021824) do
+ActiveRecord::Schema.define(:version => 20130202074344) do
 
   create_table "addresses", :force => true do |t|
     t.string   "name"
     t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "rooms", :force => true do |t|
+    t.string   "room_id"
+    t.string   "room_name"
+    t.integer  "room_max"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
