@@ -19,7 +19,7 @@
   <div id="mainContent">
 
     <p>
-    <form action="/disp" method="post">
+    <form action="" method="post">
     <table>
   <tr>
     <td class="right">ユーザ名：</td>
