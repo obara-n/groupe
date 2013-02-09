@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 set :application, "groupe"
 set :repository,  "git@github.com:obara-n/groupe.git"
 set :deploy_to, "/home/passenger/myapp1"
-=======
-set :application, "myapp"
-set :repository,  "git@github.com:obara-n/groupe.git"
-set :deploy_to, "/home/passenger/myapp"
->>>>>>> f372541c92b7e5f8738dc844b187cd67a7c1fdbb
 set :use_sudo, false
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
