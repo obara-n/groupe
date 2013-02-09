@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myapp1</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+<h1>Team Takata 会議室予約システム</h1>
+  <!-- end #header --></div>
+
+<%= yield %>
+  <div id="footer">
+<p>AIIT 産業技術大学院大学　情報アーキテクチャ　基幹システムグループＥ</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
