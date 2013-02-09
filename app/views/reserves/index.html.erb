@@ -1,0 +1,33 @@
+<h1>Listing reserves</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Room</th>
+    <th>Reserve day</th>
+    <th>Timezone</th>
+    <th>User</th>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reserves.each do |reserf| %>
+  <tr>
+    <td><%= reserf.id %></td>
+    <td><%= reserf.room_id %></td>
+    <td><%= reserf.reserve_day %></td>
+    <td><%= reserf.timezone %></td>
+    <td><%= reserf.user_id %></td>
+    <td><%= reserf.name %></td>
+    <td><%= link_to 'Show', reserf %></td>
+    <td><%= link_to 'Edit', edit_reserf_path(reserf) %></td>
+    <td><%= link_to 'Destroy', reserf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reserf', new_reserf_path %>

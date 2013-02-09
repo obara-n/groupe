@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  room_id: MyString
+  reserve_day: 2013-02-09 14:02:51
+  timezone: MyString
+  user_id: 1
+  name: MyString
+
+two:
+  id: 1
+  room_id: MyString
+  reserve_day: 2013-02-09 14:02:51
+  timezone: MyString
+  user_id: 1
+  name: MyString

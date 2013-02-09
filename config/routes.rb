@@ -1,4 +1,7 @@
 Myapp1::Application.routes.draw do
+  resources :reserves
+
+
   resources :rooms
 
 
