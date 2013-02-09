@@ -1,0 +1,2 @@
+class DispController < ApplicationController
+end
